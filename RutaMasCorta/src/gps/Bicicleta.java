@@ -22,9 +22,27 @@ public class Bicicleta {
         for(int i=0; i<camino1.length; i++)
         {
             sum1 += camino1[i];
-            sum2 += camino2[i];
-            sum3 += camino3[i];
+          
         }
+        
+        /**
+         * añadido este for para camino 2
+         */
+        for(int i=0; i<camino2.length; i++) {
+        	
+        	sum2 += camino2[i];
+        	
+        }
+        
+        /**
+         * añadido este for para camino 3 y ya funciona correctamente 
+         * pues coje la longitud de arreglo correcta para cada camino
+         */
+        for(int i=0; i<camino3.length; i++) {
+        	
+        	sum3 += camino3[i];
+        }
+        
         
         if(sum1 < sum2 && sum1 < sum3)
         {
